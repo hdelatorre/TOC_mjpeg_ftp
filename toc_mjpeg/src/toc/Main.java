@@ -8,6 +8,7 @@ public class Main {
 		CamFromFile cmf = new CamFromFile("camera_addr.txt");
 		ArrayList<String> list = (ArrayList) cmf.getCamList();
 		
+		Settings.getInstance();
 		for(String s : list){
 			System.out.println(s);
 		}
