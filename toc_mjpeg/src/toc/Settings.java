@@ -1,6 +1,5 @@
 package toc;
 
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 public class Settings {
@@ -11,7 +10,6 @@ public class Settings {
 	
 	public static Settings getInstance(){
 		if(instance == null){
-			BasicConfigurator.configure();
 			
 			instance = new Settings();
 			logger.warn("Loading Settings");
