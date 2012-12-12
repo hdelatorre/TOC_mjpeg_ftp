@@ -1,7 +1,5 @@
 package toc;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.log4j.BasicConfigurator;
 
@@ -14,6 +12,8 @@ public class Main {
 		
 		GetJpeg gj = new GetJpeg(cmf.getCamList());
 		gj.connectToCameras();
+		SaveToFile stf = new SaveToFile();
+		stf.save(gj.getCameras());
 	}
 
 }

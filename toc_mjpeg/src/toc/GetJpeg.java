@@ -2,11 +2,14 @@ package toc;
 
 import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
 
@@ -17,8 +20,7 @@ public class GetJpeg {
 	
 	static final Logger logger = Logger.getLogger(GetJpeg.class);
 
-	private URL url;
-	private BufferedImage bf;
+	private ArrayList<Camera> cameraList;
 	private MjpegFrame frame;
 	private ArrayList<String> urlList;
 	
@@ -26,33 +28,36 @@ public class GetJpeg {
 
 	public GetJpeg(List<String> list){
 		urlList = (ArrayList<String>)list;
-		url = null;
-		bf = null;
 		frame = null;
+		cameraList = new ArrayList();
 		
 	}
 	
 	public void connectToCameras(){
-		
+		cameraList.clear();
 		for(String cameraUrl : urlList){
 			try {
 				URL url = new URL(cameraUrl);
 				MjpegInputStream in = new MjpegInputStream(new BufferedInputStream(url.openStream()));
 				
-				/*while((frame = in.readMjpegFrame()) !=null){
-					logger.warn("Reading fream from a streem " + cameraUrl);
-				}*/
-				
 				if((frame = in.readMjpegFrame()) != null){
-					logger.warn("Reading fream from a streem " + cameraUrl);
+					logger.warn("Reading frame from a camera: " + cameraUrl);
+					BufferedImage image = ImageIO.read(new ByteArrayInputStream(frame.getJpegBytes()));
+					String name = cameraUrl.substring(17, 20);
+					cameraList.add(new Camera(name,image));
+					logger.warn("Addeding camera to a list: " + name);
 				}
 				
 			} catch (MalformedURLException e) {
-				logger.warn("Problem connecting to the camera " + cameraUrl+ "\n" + e.toString());
+				logger.warn("Problem connecting to the camera: " + cameraUrl+ "\n\n\t\t" + e.toString() + "\n");
 			}catch (IOException e) {
-				logger.warn("Problem connecting to the camera " + cameraUrl+ "\n" + e.toString());
+				logger.warn("Problem connecting to the camera: " + cameraUrl+ "\n\n\t\t" + e.toString() + "\n");
 			}
 		}
 		
+	}
+	
+	public List getCameras(){
+		return cameraList;
 	}
 }
