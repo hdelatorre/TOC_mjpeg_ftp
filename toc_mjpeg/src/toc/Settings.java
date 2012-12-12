@@ -29,6 +29,7 @@ public class Settings {
 		return instance;	
 	}
 	
+	
 	public void loadSettings(){
 		loadFile();
 		setCamFile();

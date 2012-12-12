@@ -10,12 +10,10 @@ public class Main {
 	public static void main(String[] args) {
 		BasicConfigurator.configure();
 		CamSettings cmf = new CamSettings();
-
-		ArrayList<String> list = (ArrayList)cmf.getCamList();
 		
-		for(String s : list){
-			System.out.println(s);
-		}
+		
+		GetJpeg gj = new GetJpeg(cmf.getCamList());
+		gj.connectToCameras();
 	}
 
 }

@@ -13,9 +13,7 @@ public class CamSettings {
 	
 	static final Logger logger = Logger.getLogger(CamSettings.class);
 	
-	private String prefix = "http://";
-	
-	//Camera needs to be setup to stream mjpeg on stream3 
+	private String prefix;
 	private String suffix;
 	private BufferedReader bf;
 	private String file;
@@ -23,16 +21,22 @@ public class CamSettings {
 	private List<String> camList;
 	private Settings settings;
 	
+	
 	public CamSettings(){
+		
+		//Setup 
 		settings = Settings.getInstance();
 		camList = new ArrayList<String>();
 		file = settings.getCamList();
 		streamNumber = settings.getStreamNumber();
 		suffix = "/video" + streamNumber + ".mjpg";
+		prefix = "http://";
 		
 		try{
 			logger.warn("Loading a camera list file");
 			
+			
+			//loading list of camras from file
 			bf = new BufferedReader(new FileReader(file));
 			String line;
 			while((line = bf.readLine()) != null){
