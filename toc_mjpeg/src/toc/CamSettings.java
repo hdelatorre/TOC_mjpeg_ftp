@@ -9,19 +9,27 @@ import java.util.List;
 import org.apache.log4j.Logger;
 
 
-public class CamFromFile {
+public class CamSettings {
 	
-	static final Logger logger = Logger.getLogger(CamFromFile.class);
+	static final Logger logger = Logger.getLogger(CamSettings.class);
 	
 	private String prefix = "http://";
 	
 	//Camera needs to be setup to stream mjpeg on stream3 
-	private String suffix = "/video3.mjpg";
+	private String suffix;
 	private BufferedReader bf;
+	private String file;
+	private String streamNumber;
 	private List<String> camList;
+	private Settings settings;
 	
-	public CamFromFile(String file){
+	public CamSettings(){
+		settings = Settings.getInstance();
 		camList = new ArrayList<String>();
+		file = settings.getCamList();
+		streamNumber = settings.getStreamNumber();
+		suffix = "/video" + streamNumber + ".mjpg";
+		
 		try{
 			logger.warn("Loading a camera list file");
 			
@@ -40,7 +48,7 @@ public class CamFromFile {
 		}
 	}
 	
-	public List getCamList(){
+	public List<String> getCamList(){
 		return camList;
 	}
 }

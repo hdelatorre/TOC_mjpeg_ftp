@@ -1,0 +1,8 @@
+//Loading cameras addresses from file
+camera_list camera_addr.txt;
+
+//Delaytime
+ttime 30;
+
+//Stream number
+stream 3;
