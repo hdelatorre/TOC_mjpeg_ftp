@@ -29,7 +29,7 @@ public class GetJpeg {
 	public GetJpeg(List<String> list){
 		urlList = (ArrayList<String>)list;
 		frame = null;
-		cameraList = new ArrayList();
+		cameraList = new ArrayList<Camera>();
 		
 	}
 	
@@ -45,7 +45,7 @@ public class GetJpeg {
 					BufferedImage image = ImageIO.read(new ByteArrayInputStream(frame.getJpegBytes()));
 					String name = cameraUrl.substring(17, 20);
 					cameraList.add(new Camera(name,image));
-					logger.warn("Addeding camera to a list: " + name);
+					logger.warn("Addeding camera: " + name + " to a list");
 				}
 				
 			} catch (MalformedURLException e) {
@@ -57,7 +57,7 @@ public class GetJpeg {
 		
 	}
 	
-	public List getCameras(){
+	public List<Camera> getCameras(){
 		return cameraList;
 	}
 }
