@@ -6,3 +6,18 @@ ttime 30;
 
 //Stream number
 stream 3;
+
+//File format
+format jpg;
+
+//FTP server
+ftp_server theoldcinema.co.uk;
+
+//Username
+username cameras;
+
+//Password
+password gs1926;
+
+//Folder to upolad from
+dir ;

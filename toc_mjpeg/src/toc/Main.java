@@ -9,11 +9,20 @@ public class Main {
 		BasicConfigurator.configure();
 		CamSettings cmf = new CamSettings();
 		
-		
-		GetJpeg gj = new GetJpeg(cmf.getCamList());
-		gj.connectToCameras();
-		SaveToFile stf = new SaveToFile();
-		stf.save(gj.getCameras());
+		while(true){
+			GetJpeg gj = new GetJpeg(cmf.getCamList());
+			gj.connectToCameras();
+			SaveToFile stf = new SaveToFile();
+			stf.save(gj.getCameras());
+			
+			SendToFTP ftp = new SendToFTP();
+			try {
+				Thread.sleep(50000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 }

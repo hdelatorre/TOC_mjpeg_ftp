@@ -47,6 +47,7 @@ public class GetJpeg {
 					cameraList.add(new Camera(name,image));
 					logger.warn("Addeding camera: " + name + " to a list");
 				}
+				in.close();
 				
 			} catch (MalformedURLException e) {
 				logger.warn("Problem connecting to the camera: " + cameraUrl+ "\n\n\t\t" + e.toString() + "\n");
