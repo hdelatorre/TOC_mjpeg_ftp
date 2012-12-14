@@ -1,34 +1,207 @@
-"[INFO] 2012-12-14 15:10:33,064 - toc.Settings.loadFile(Settings.java:51) - Loading Settings file 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadCamFile(Settings.java:75) - Camera list loaded from " camera_addr.txt" 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadTime(Settings.java:90) - Snapshot delay:  1min 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadStreamNumber(Settings.java:101) - Stream number:  3 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadFormat(Settings.java:112) - File format:  jpg 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadFtpServer(Settings.java:123) - Server:  theoldcinema.co.uk 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadUsername(Settings.java:134) - Username:  cameras 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadPassword(Settings.java:145) - Password: xxxxxxxx 
-""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadDir(Settings.java:156) - Upload images from:   
-""[INFO] 2012-12-14 15:10:33,074 - toc.CamSettings.<init>(CamSettings.java:36) - Loading a camera list file 
-""[INFO] 2012-12-14 15:10:33,074 - toc.CamSettings.<init>(CamSettings.java:45) - Loading cameras urls from a file finished 
-""[INFO] 2012-12-14 15:10:33,494 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.101/video3.mjpg 
-""[INFO] 2012-12-14 15:10:33,644 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 101 to a list 
-""[INFO] 2012-12-14 15:10:34,144 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.102/video3.mjpg 
-""[INFO] 2012-12-14 15:10:34,175 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 102 to a list 
-""[INFO] 2012-12-14 15:10:34,545 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.103/video3.mjpg 
-""[INFO] 2012-12-14 15:10:34,565 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 103 to a list 
-""[INFO] 2012-12-14 15:10:35,046 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.104/video3.mjpg 
-""[INFO] 2012-12-14 15:10:35,077 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 104 to a list 
-""[INFO] 2012-12-14 15:10:35,623 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.105/video3.mjpg 
-""[INFO] 2012-12-14 15:10:35,671 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 105 to a list 
-""[INFO] 2012-12-14 15:10:36,014 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.106/video3.mjpg 
-""[INFO] 2012-12-14 15:10:36,045 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 106 to a list 
-""[INFO] 2012-12-14 15:10:36,451 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.107/video3.mjpg 
-""[INFO] 2012-12-14 15:10:36,482 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 107 to a list 
-""[INFO] 2012-12-14 15:10:37,074 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.108/video3.mjpg 
-""[INFO] 2012-12-14 15:10:37,095 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 108 to a list 
-""[INFO] 2012-12-14 15:10:37,555 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.109/video3.mjpg 
-""[INFO] 2012-12-14 15:10:37,595 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 109 to a list 
-""[INFO] 2012-12-14 15:10:37,965 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.110/video3.mjpg 
-""[INFO] 2012-12-14 15:10:37,985 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 110 to a list 
-""[INFO] 2012-12-14 15:10:38,365 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.111/video3.mjpg 
-""[INFO] 2012-12-14 15:10:38,396 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 111 to a list 
-"
+[INFO] 2012-12-14 15:14:09,106 - toc.Settings.loadFile(Settings.java:51) - Loading Settings file 
+[INFO] 2012-12-14 15:14:09,106 - toc.Settings.loadCamFile(Settings.java:75) - Camera list loaded from " camera_addr.txt" 
+[INFO] 2012-12-14 15:14:09,106 - toc.Settings.loadTime(Settings.java:90) - Snapshot delay:  1min 
+[INFO] 2012-12-14 15:14:09,106 - toc.Settings.loadStreamNumber(Settings.java:101) - Stream number:  3 
+[INFO] 2012-12-14 15:14:09,106 - toc.Settings.loadFormat(Settings.java:112) - File format:  jpg 
+[INFO] 2012-12-14 15:14:09,121 - toc.Settings.loadFtpServer(Settings.java:123) - Server:  theoldcinema.co.uk 
+[INFO] 2012-12-14 15:14:09,121 - toc.Settings.loadUsername(Settings.java:134) - Username:  cameras 
+[INFO] 2012-12-14 15:14:09,121 - toc.Settings.loadPassword(Settings.java:145) - Password: xxxxxxxx 
+[INFO] 2012-12-14 15:14:09,121 - toc.Settings.loadDir(Settings.java:156) - Upload images from:   
+[INFO] 2012-12-14 15:14:09,121 - toc.CamSettings.<init>(CamSettings.java:36) - Loading a camera list file 
+[INFO] 2012-12-14 15:14:09,121 - toc.CamSettings.<init>(CamSettings.java:45) - Loading cameras urls from a file finished 
+[INFO] 2012-12-14 15:14:09,511 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.101/video3.mjpg 
+[INFO] 2012-12-14 15:14:09,605 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 101 to a list 
+[INFO] 2012-12-14 15:14:10,104 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.102/video3.mjpg 
+[INFO] 2012-12-14 15:14:10,136 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 102 to a list 
+[INFO] 2012-12-14 15:14:10,464 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.103/video3.mjpg 
+[INFO] 2012-12-14 15:14:10,495 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 103 to a list 
+[INFO] 2012-12-14 15:14:10,823 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.104/video3.mjpg 
+[INFO] 2012-12-14 15:14:10,854 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 104 to a list 
+[INFO] 2012-12-14 15:14:11,244 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.105/video3.mjpg 
+[INFO] 2012-12-14 15:14:11,292 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 105 to a list 
+[INFO] 2012-12-14 15:14:11,604 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.106/video3.mjpg 
+[INFO] 2012-12-14 15:14:11,635 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 106 to a list 
+[INFO] 2012-12-14 15:14:12,103 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.107/video3.mjpg 
+[INFO] 2012-12-14 15:14:12,150 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 107 to a list 
+[INFO] 2012-12-14 15:14:12,633 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.108/video3.mjpg 
+[INFO] 2012-12-14 15:14:12,660 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 108 to a list 
+[INFO] 2012-12-14 15:14:13,110 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.109/video3.mjpg 
+[INFO] 2012-12-14 15:14:13,150 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 109 to a list 
+[INFO] 2012-12-14 15:14:13,560 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.110/video3.mjpg 
+[INFO] 2012-12-14 15:14:13,600 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 110 to a list 
+[INFO] 2012-12-14 15:14:13,950 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.111/video3.mjpg 
+[INFO] 2012-12-14 15:14:13,971 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 111 to a list 
+[INFO] 2012-12-14 15:14:14,401 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.112/video3.mjpg 
+[INFO] 2012-12-14 15:14:14,431 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 112 to a list 
+[INFO] 2012-12-14 15:14:14,431 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_101.jpg 
+[INFO] 2012-12-14 15:14:14,501 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_102.jpg 
+[INFO] 2012-12-14 15:14:14,551 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_103.jpg 
+[INFO] 2012-12-14 15:14:14,591 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_104.jpg 
+[INFO] 2012-12-14 15:14:14,631 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_105.jpg 
+[INFO] 2012-12-14 15:14:15,671 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_106.jpg 
+[INFO] 2012-12-14 15:14:15,712 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_107.jpg 
+[INFO] 2012-12-14 15:14:15,752 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_108.jpg 
+[INFO] 2012-12-14 15:14:15,792 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_109.jpg 
+[INFO] 2012-12-14 15:14:15,832 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_110.jpg 
+[INFO] 2012-12-14 15:14:15,862 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_111.jpg 
+[INFO] 2012-12-14 15:14:15,902 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_112.jpg 
+[INFO] 2012-12-14 15:14:15,962 - toc.SendToFTP.initFtpClient(SendToFTP.java:46) - Connecting to FTP Server 
+[INFO] 2012-12-14 15:14:16,582 - toc.SendToFTP.initFtpClient(SendToFTP.java:48) - 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+220-You are user number 3 of 150 allowed.
+220-Local time is now 08:13. Server port: 21.
+220-This is a private system - No anonymous login
+220-IPv6 connections are also welcome on this server.
+220 You will be disconnected after 30 minutes of inactivity.
+ 
+[INFO] 2012-12-14 15:14:16,582 - toc.SendToFTP.initFtpClient(SendToFTP.java:49) - Loging in to FTP Server as a: cameras 
+[INFO] 2012-12-14 15:14:16,912 - toc.SendToFTP.initFtpClient(SendToFTP.java:51) - 230 OK. Current restricted directory is /
+ 
+[INFO] 2012-12-14 15:14:17,073 - toc.SendToFTP.initFtpClient(SendToFTP.java:56) - 200 TYPE is now 8-bit binary
+ 
+[INFO] 2012-12-14 15:14:17,073 - toc.SendToFTP.initFtpClient(SendToFTP.java:61) - Connectd 
+[INFO] 2012-12-14 15:14:25,686 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_101.jpg Uploaded || size: 167.0kB, time: 8.61s, speed: 19.39kB/s 
+[INFO] 2012-12-14 15:14:37,237 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_102.jpg Uploaded || size: 188.0kB, time: 11.55s, speed: 16.28kB/s 
+[INFO] 2012-12-14 15:14:41,430 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_103.jpg Uploaded || size: 176.0kB, time: 4.19s, speed: 41.97kB/s 
+[INFO] 2012-12-14 15:14:47,649 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_104.jpg Uploaded || size: 194.0kB, time: 6.22s, speed: 31.19kB/s 
+[INFO] 2012-12-14 15:14:56,256 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_105.jpg Uploaded || size: 212.0kB, time: 8.61s, speed: 24.63kB/s 
+[INFO] 2012-12-14 15:15:03,857 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_106.jpg Uploaded || size: 152.0kB, time: 7.6s, speed: 20kB/s 
+[INFO] 2012-12-14 15:15:13,180 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_107.jpg Uploaded || size: 170.0kB, time: 9.31s, speed: 18.25kB/s 
+[INFO] 2012-12-14 15:15:27,249 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_108.jpg Uploaded || size: 214.0kB, time: 14.07s, speed: 15.21kB/s 
+[INFO] 2012-12-14 15:15:35,787 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_109.jpg Uploaded || size: 180.0kB, time: 8.54s, speed: 21.08kB/s 
+[INFO] 2012-12-14 15:15:44,078 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_110.jpg Uploaded || size: 142.0kB, time: 8.29s, speed: 17.13kB/s 
+[INFO] 2012-12-14 15:15:52,821 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_111.jpg Uploaded || size: 186.0kB, time: 8.74s, speed: 21.27kB/s 
+[INFO] 2012-12-14 15:16:04,072 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_112.jpg Uploaded || size: 273.0kB, time: 11.25s, speed: 24.26kB/s 
+[INFO] 2012-12-14 15:16:04,072 - toc.SendToFTP.initFtpClient(SendToFTP.java:66) - Totale upload time: 106.99s 
+[INFO] 2012-12-14 15:16:04,072 - toc.SendToFTP.initFtpClient(SendToFTP.java:84) - Loging out 
+[INFO] 2012-12-14 15:16:04,413 - toc.SendToFTP.initFtpClient(SendToFTP.java:86) - Totale upload time: 106.99s 
+[INFO] 2012-12-14 15:16:04,413 - toc.SendToFTP.initFtpClient(SendToFTP.java:87) - Disconnecting from FTP Server 
+[INFO] 2012-12-14 15:16:04,413 - toc.Main.main(Main.java:31) - Wating 1min... 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadFile(Settings.java:51) - Loading Settings file 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadCamFile(Settings.java:75) - Camera list loaded from " camera_addr.txt" 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadTime(Settings.java:90) - Snapshot delay:  1min 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadStreamNumber(Settings.java:101) - Stream number:  3 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadFormat(Settings.java:112) - File format:  jpg 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadFtpServer(Settings.java:123) - Server:  theoldcinema.co.uk 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadUsername(Settings.java:134) - Username:  cameras 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadPassword(Settings.java:145) - Password: xxxxxxxx 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadDir(Settings.java:156) - Upload images from:   
+[INFO] 2012-12-14 16:02:16,312 - toc.CamSettings.<init>(CamSettings.java:36) - Loading a camera list file 
+[INFO] 2012-12-14 16:02:16,312 - toc.CamSettings.<init>(CamSettings.java:45) - Loading cameras urls from a file finished 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadFile(Settings.java:51) - Loading Settings file 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadCamFile(Settings.java:75) - Camera list loaded from " camera_addr.txt" 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadTime(Settings.java:90) - Snapshot delay:  1min 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadStreamNumber(Settings.java:101) - Stream number:  3 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadFormat(Settings.java:112) - File format:  jpg 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadFtpServer(Settings.java:123) - Server:  theoldcinema.co.uk 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadUsername(Settings.java:134) - Username:  cameras 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadPassword(Settings.java:145) - Password: xxxxxxxx 
+[INFO] 2012-12-14 16:02:16,312 - toc.Settings.loadDir(Settings.java:156) - Upload images from:   
+[INFO] 2012-12-14 16:02:16,702 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.101/video3.mjpg 
+[INFO] 2012-12-14 16:02:16,874 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 101 to a list 
+[INFO] 2012-12-14 16:02:17,295 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.102/video3.mjpg 
+[INFO] 2012-12-14 16:02:17,327 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 102 to a list 
+[INFO] 2012-12-14 16:02:17,670 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.103/video3.mjpg 
+[INFO] 2012-12-14 16:02:17,701 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 103 to a list 
+[INFO] 2012-12-14 16:02:18,091 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.104/video3.mjpg 
+[INFO] 2012-12-14 16:02:18,123 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 104 to a list 
+[INFO] 2012-12-14 16:02:18,544 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.105/video3.mjpg 
+[INFO] 2012-12-14 16:02:18,559 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 105 to a list 
+[INFO] 2012-12-14 16:02:18,950 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.106/video3.mjpg 
+[INFO] 2012-12-14 16:02:18,966 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 106 to a list 
+[INFO] 2012-12-14 16:02:19,465 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.107/video3.mjpg 
+[INFO] 2012-12-14 16:02:19,496 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 107 to a list 
+[INFO] 2012-12-14 16:02:19,996 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.108/video3.mjpg 
+[INFO] 2012-12-14 16:02:20,027 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 108 to a list 
+[INFO] 2012-12-14 16:02:20,511 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.109/video3.mjpg 
+[INFO] 2012-12-14 16:02:20,543 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 109 to a list 
+[INFO] 2012-12-14 16:02:21,042 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.110/video3.mjpg 
+[INFO] 2012-12-14 16:02:21,074 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 110 to a list 
+[INFO] 2012-12-14 16:02:21,402 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.111/video3.mjpg 
+[INFO] 2012-12-14 16:02:21,433 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 111 to a list 
+[INFO] 2012-12-14 16:02:21,776 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.112/video3.mjpg 
+[INFO] 2012-12-14 16:02:21,792 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 112 to a list 
+[INFO] 2012-12-14 16:02:21,792 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_101.jpg 
+[INFO] 2012-12-14 16:02:21,854 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_102.jpg 
+[INFO] 2012-12-14 16:02:21,901 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_103.jpg 
+[INFO] 2012-12-14 16:02:21,948 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_104.jpg 
+[INFO] 2012-12-14 16:02:21,979 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_105.jpg 
+[INFO] 2012-12-14 16:02:22,447 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_106.jpg 
+[INFO] 2012-12-14 16:02:22,484 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_107.jpg 
+[INFO] 2012-12-14 16:02:22,531 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_108.jpg 
+[INFO] 2012-12-14 16:02:22,562 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_109.jpg 
+[INFO] 2012-12-14 16:02:22,593 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_110.jpg 
+[INFO] 2012-12-14 16:02:22,640 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_111.jpg 
+[INFO] 2012-12-14 16:02:22,671 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_112.jpg 
+[INFO] 2012-12-14 16:02:22,718 - toc.SendToFTP.initFtpClient(SendToFTP.java:46) - Connecting to FTP Server 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadFile(Settings.java:51) - Loading Settings file 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadCamFile(Settings.java:75) - Camera list loaded from " camera_addr.txt" 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadTime(Settings.java:90) - Snapshot delay:  1min 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadStreamNumber(Settings.java:101) - Stream number:  3 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadFormat(Settings.java:112) - File format:  jpg 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadFtpServer(Settings.java:123) - Server:  theoldcinema.co.uk 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadUsername(Settings.java:134) - Username:  cameras 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadPassword(Settings.java:145) - Password: xxxxxxxx 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadDir(Settings.java:156) - Upload images from:   
+[INFO] 2012-12-14 16:02:50,082 - toc.CamSettings.<init>(CamSettings.java:36) - Loading a camera list file 
+[INFO] 2012-12-14 16:02:50,082 - toc.CamSettings.<init>(CamSettings.java:45) - Loading cameras urls from a file finished 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadFile(Settings.java:51) - Loading Settings file 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadCamFile(Settings.java:75) - Camera list loaded from " camera_addr.txt" 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadTime(Settings.java:90) - Snapshot delay:  1min 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadStreamNumber(Settings.java:101) - Stream number:  3 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadFormat(Settings.java:112) - File format:  jpg 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadFtpServer(Settings.java:123) - Server:  theoldcinema.co.uk 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadUsername(Settings.java:134) - Username:  cameras 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadPassword(Settings.java:145) - Password: xxxxxxxx 
+[INFO] 2012-12-14 16:02:50,082 - toc.Settings.loadDir(Settings.java:156) - Upload images from:   
+[INFO] 2012-12-14 16:02:50,472 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.101/video3.mjpg 
+[INFO] 2012-12-14 16:02:50,565 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 101 to a list 
+[INFO] 2012-12-14 16:02:51,002 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.102/video3.mjpg 
+[INFO] 2012-12-14 16:02:51,034 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 102 to a list 
+[INFO] 2012-12-14 16:02:51,424 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.103/video3.mjpg 
+[INFO] 2012-12-14 16:02:51,440 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 103 to a list 
+[INFO] 2012-12-14 16:02:52,001 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.104/video3.mjpg 
+[INFO] 2012-12-14 16:02:52,017 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 104 to a list 
+[INFO] 2012-12-14 16:02:52,408 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.105/video3.mjpg 
+[INFO] 2012-12-14 16:02:52,439 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 105 to a list 
+[INFO] 2012-12-14 16:02:52,829 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.106/video3.mjpg 
+[INFO] 2012-12-14 16:02:52,845 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 106 to a list 
+[INFO] 2012-12-14 16:02:53,297 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.107/video3.mjpg 
+[INFO] 2012-12-14 16:02:53,345 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 107 to a list 
+[INFO] 2012-12-14 16:02:54,359 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.108/video3.mjpg 
+[INFO] 2012-12-14 16:02:54,398 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 108 to a list 
+[INFO] 2012-12-14 16:02:54,804 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.109/video3.mjpg 
+[INFO] 2012-12-14 16:02:54,835 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 109 to a list 
+[INFO] 2012-12-14 16:02:55,241 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.110/video3.mjpg 
+[INFO] 2012-12-14 16:02:55,256 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 110 to a list 
+[INFO] 2012-12-14 16:02:55,521 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.111/video3.mjpg 
+[INFO] 2012-12-14 16:02:55,569 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 111 to a list 
+[INFO] 2012-12-14 16:02:55,881 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.112/video3.mjpg 
+[INFO] 2012-12-14 16:02:55,912 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 112 to a list 
+[INFO] 2012-12-14 16:02:55,912 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_101.jpg 
+[INFO] 2012-12-14 16:02:55,975 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_102.jpg 
+[INFO] 2012-12-14 16:02:56,022 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_103.jpg 
+[INFO] 2012-12-14 16:02:56,068 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_104.jpg 
+[INFO] 2012-12-14 16:02:56,100 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_105.jpg 
+[INFO] 2012-12-14 16:02:56,146 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_106.jpg 
+[INFO] 2012-12-14 16:02:56,178 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_107.jpg 
+[INFO] 2012-12-14 16:02:56,209 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_108.jpg 
+[INFO] 2012-12-14 16:02:56,412 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_109.jpg 
+[INFO] 2012-12-14 16:02:56,443 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_110.jpg 
+[INFO] 2012-12-14 16:02:56,474 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_111.jpg 
+[INFO] 2012-12-14 16:02:56,521 - toc.SaveToFile.save(SaveToFile.java:28) - Saving frame to file: cam_112.jpg 
+[INFO] 2012-12-14 16:02:56,568 - toc.SendToFTP.initFtpClient(SendToFTP.java:46) - Connecting to FTP Server 
+[INFO] 2012-12-14 16:02:57,208 - toc.SendToFTP.initFtpClient(SendToFTP.java:48) - 220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+220-You are user number 1 of 150 allowed.
+220-Local time is now 09:02. Server port: 21.
+220-This is a private system - No anonymous login
+220-IPv6 connections are also welcome on this server.
+220 You will be disconnected after 30 minutes of inactivity.
+ 
+[INFO] 2012-12-14 16:02:57,208 - toc.SendToFTP.initFtpClient(SendToFTP.java:49) - Loging in to FTP Server as a: cameras 
+[INFO] 2012-12-14 16:02:57,770 - toc.SendToFTP.initFtpClient(SendToFTP.java:51) - 230 OK. Current restricted directory is /
+ 
+[INFO] 2012-12-14 16:02:58,005 - toc.SendToFTP.initFtpClient(SendToFTP.java:56) - 200 TYPE is now 8-bit binary
+ 
+[INFO] 2012-12-14 16:02:58,005 - toc.SendToFTP.initFtpClient(SendToFTP.java:61) - Connectd 
+[INFO] 2012-12-14 16:03:23,417 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_101.jpg Uploaded || size: 163.0kB, time: 25.41s, speed: 6.41kB/s 
+[INFO] 2012-12-14 16:03:35,181 - toc.SendToFTP.upload(SendToFTP.java:112) - File: cam_102.jpg Uploaded || size: 184.0kB, time: 11.76s, speed: 15.64kB/s 

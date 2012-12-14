@@ -63,7 +63,7 @@ public class SendToFTP {
 					upload(s);
 					
 				}
-				logger.info("Totale upload time: " + df.format(totalTime) + "s");
+				logger.info("Total upload time: " + df.format(totalTime) + "s");
 				 
 			}
 			else{
