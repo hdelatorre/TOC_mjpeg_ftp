@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.SocketException;
+import java.net.UnknownHostException;
+import java.text.DecimalFormat;
 
 
 import org.apache.commons.net.PrintCommandListener;
@@ -26,11 +28,14 @@ public class SendToFTP {
 	private File dir;
 	private int reply;
 	private FileInputStream in;
-	
+	private float totalTime;
+	private DecimalFormat df;
 	
 	public SendToFTP(){
-		settings = Settings.getInstance();		
+		settings = Settings.getInstance();
+		df = new DecimalFormat("0.##");
 		in = null;
+		totalTime = 0;
 		getFileList();	
 		initFtpClient();
 	}
@@ -38,39 +43,51 @@ public class SendToFTP {
 	private void initFtpClient(){
 		ftp = new FTPClient();
 		try {
+			logger.info("Connecting to FTP Server");
 			ftp.connect(settings.getFtpServer());
-			logger.warn(ftp.getReplyString());
+			logger.info(ftp.getReplyString());
+			logger.info("Loging in to FTP Server as a: " + settings.getUsername());
 			ftp.login(settings.getUsername(), settings.getPassword());
-			logger.warn(ftp.getReplyString());
+			logger.info(ftp.getReplyString());
 			ftp.setFileType(FTP.BINARY_FILE_TYPE);
 			ftp.enterLocalPassiveMode();
-			ftp.setBufferSize(8000);
+			ftp.setBufferSize(8191);
 			//ftp.addProtocolCommandListener(new PrintCommandListener(new PrintWriter(System.out))); 
-			logger.warn(ftp.getReplyString());
+			logger.info(ftp.getReplyString());
 			
 			reply = ftp.getReplyCode();
 			
 			if(FTPReply.isPositiveCompletion(reply)){
-				logger.warn("Connectd");
+				logger.info("Connectd");
 				for(String s : fileList){
 					upload(s);
+					
 				}
-				
+				logger.info("Totale upload time: " + df.format(totalTime) + "s");
+				 
 			}
 			else{
-				logger.warn("Connection Faild");
+				logger.warn("Connection Faild.");
+				logger.info("Disconnecting from FTP Server");
 				ftp.disconnect();
 			}
 			
 		} catch (SocketException e) {
 			e.printStackTrace();
-		} catch (IOException e) {
+		}catch(UnknownHostException e){
+			logger.error("Cannot fint host: " + settings.getFtpServer() + "\n" + e.toString());
+		}
+		catch (IOException e) {
 			e.printStackTrace();
 		}finally{
 			try {
+				logger.info("Loging out");
+				ftp.logout();
+				logger.info("Totale upload time: " + df.format(totalTime) + "s");
+				logger.info("Disconnecting from FTP Server");
 				ftp.disconnect();
 			} catch (IOException e) {
-				e.printStackTrace();
+				logger.error(e.toString());
 			}
 		}
 		
@@ -91,15 +108,17 @@ public class SendToFTP {
 			start = System.currentTimeMillis();
 			if(ftp.storeFile(settings.getDir() + "/" + file,in)){
 				float time = (System.currentTimeMillis() - start) / 1000F;
-				logger.warn("File: " + file + " Uploaded || size: "+ kbytes + "kB, time: " + time + "s, speed: " + kbytes/time + "kB/s");
+				
+				logger.info("File: " + file + " Uploaded || size: "+ kbytes + "kB, time: " + df.format(time) + "s, speed: " + df.format(kbytes/time) + "kB/s");
+				totalTime = totalTime + time;
 			}else{
-				logger.warn("Save file: " + file + " Faild");
+				logger.error("Save file: " + file + " Faild");
 			}
 			in.close();
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			logger.error(e.toString());
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.error(e.toString());
 		}
 		
 		

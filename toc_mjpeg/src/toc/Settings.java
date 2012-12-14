@@ -14,7 +14,7 @@ public class Settings {
 	private BufferedReader bf;
 	private StringBuffer sb;
 	private String cam_list;
-	private String snapshot_time;
+	private int snapshot_time;
 	private String streamNumber;
 	private String fileFormat;
 	private String ftpServer;
@@ -22,7 +22,7 @@ public class Settings {
 	private String password;
 	private String dir;
 	
-	protected Settings(){}
+	private Settings(){}
 	
 	public static Settings getInstance(){
 		if(instance == null){
@@ -33,11 +33,7 @@ public class Settings {
 		}
 		return instance;	
 	}
-	
-	
-	/**
-	 * 
-	 */
+
 	public void loadSettings(){
 		loadFile();
 		loadCamFile();
@@ -52,7 +48,7 @@ public class Settings {
 	
 	
 	private void loadFile(){
-		logger.warn("Loading Settings file");
+		logger.info("Loading Settings file");
 		sb = new StringBuffer();
 		try {
 			bf = new BufferedReader(new FileReader("settings.txt"));
@@ -61,9 +57,9 @@ public class Settings {
 				sb.append(line);
 			}
 		} catch (FileNotFoundException e) {
-			logger.warn(e.toString());
+			logger.error(e.toString());
 		}catch (IOException e) {
-			logger.warn(e.toString());
+			logger.error(e.toString());
 		}
 	}
 	
@@ -76,11 +72,11 @@ public class Settings {
 		if(start > -1){
 			String tmp = strBuff.substring(start + 11, end);
 			cam_list = tmp.trim();
-			logger.warn("Camera list loaded from \"" + tmp + "\"");
+			logger.info("Camera list loaded from \"" + tmp + "\"");
 		}
 		
 		if(cam_list == null)
-				logger.warn("Wrong settings file!!!");
+				logger.error("Wrong settings file!!!");
 
 	}
 	
@@ -90,8 +86,8 @@ public class Settings {
 		int end  = strBuff.indexOf(";", start + 5);
 		if(start > -1){
 			String tmp = strBuff.substring(start + 5, end);
-			snapshot_time = tmp.trim();
-			logger.warn("Snapshot delay: " + tmp + "min");
+			snapshot_time = Integer.parseInt(tmp.trim())*60000;
+			logger.info("Snapshot delay: " + tmp + "min");
 		}
 	}
 	
@@ -102,7 +98,7 @@ public class Settings {
 		if(start > -1){
 			String tmp = strBuff.substring(start + 6, end);
 			streamNumber = tmp.trim();
-			logger.warn("Stream number: " + tmp);
+			logger.info("Stream number: " + tmp);
 		}
 	}
 	
@@ -113,7 +109,7 @@ public class Settings {
 		if(start > -1){
 			String tmp = strBuff.substring(start + 6, end);
 			fileFormat = tmp.trim();
-			logger.warn("File format: " + tmp);
+			logger.info("File format: " + tmp);
 		}
 	}
 	
@@ -124,7 +120,7 @@ public class Settings {
 		if(start > -1){
 			String tmp = strBuff.substring(start + 10, end);
 			ftpServer = tmp.trim();
-			logger.warn("Server: " + tmp);
+			logger.info("Server: " + tmp);
 		}
 	}
 	
@@ -135,7 +131,7 @@ public class Settings {
 		if(start > -1){
 			String tmp = strBuff.substring(start + 8, end);
 			username = tmp.trim();
-			logger.warn("Username: " + tmp);
+			logger.info("Username: " + tmp);
 		}
 	}
 	
@@ -146,7 +142,7 @@ public class Settings {
 		if(start > -1){
 			String tmp = strBuff.substring(start + 8, end);
 			password = tmp.trim();
-			logger.warn("Password: xxxxxxxx");
+			logger.info("Password: xxxxxxxx");
 		}
 	}
 	
@@ -157,7 +153,7 @@ public class Settings {
 		if(start > -1){
 			String tmp = strBuff.substring(start + 3, end);
 			dir = tmp.trim();
-			logger.warn("Upload images from: " + tmp);
+			logger.info("Upload images from: " + tmp);
 		}
 	}
 	
@@ -177,7 +173,7 @@ public class Settings {
 		return cam_list;
 	}
 
-	public String getSnapshot_time() {
+	public int getSnapshot_time() {
 		return snapshot_time;
 	}
 
@@ -200,10 +196,5 @@ public class Settings {
 	public String getDir() {
 		return dir;
 	}
-	
-	
-	
-	
-	
-	
+
 }

@@ -41,18 +41,18 @@ public class GetJpeg {
 				MjpegInputStream in = new MjpegInputStream(new BufferedInputStream(url.openStream()));
 				
 				if((frame = in.readMjpegFrame()) != null){
-					logger.warn("Reading frame from a camera: " + cameraUrl);
+					logger.info("Reading frame from a camera: " + cameraUrl);
 					BufferedImage image = ImageIO.read(new ByteArrayInputStream(frame.getJpegBytes()));
 					String name = cameraUrl.substring(17, 20);
 					cameraList.add(new Camera(name,image));
-					logger.warn("Addeding camera: " + name + " to a list");
+					logger.info("Addeding camera: " + name + " to a list");
 				}
 				in.close();
 				
 			} catch (MalformedURLException e) {
-				logger.warn("Problem connecting to the camera: " + cameraUrl+ "\n\n\t\t" + e.toString() + "\n");
+				logger.error("Problem connecting to the camera: " + cameraUrl+ "\n\n\t\t" + e.toString() + "\n");
 			}catch (IOException e) {
-				logger.warn("Problem connecting to the camera: " + cameraUrl+ "\n\n\t\t" + e.toString() + "\n");
+				logger.error("Problem connecting to the camera: " + cameraUrl+ "\n\n\t\t" + e.toString() + "\n");
 			}
 		}
 		

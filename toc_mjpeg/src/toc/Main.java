@@ -1,12 +1,22 @@
 package toc;
 
 
+import java.io.IOException;
+
+import org.apache.log4j.Appender;
 import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.FileAppender;
+import org.apache.log4j.Layout;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
 
 
 public class Main {
+	
+	static final Logger logger = Logger.getLogger(Main.class);
 	public static void main(String[] args) {
-		BasicConfigurator.configure();
+		Settings settings = Settings.getInstance();
 		CamSettings cmf = new CamSettings();
 		
 		while(true){
@@ -15,12 +25,15 @@ public class Main {
 			SaveToFile stf = new SaveToFile();
 			stf.save(gj.getCameras());
 			
-			SendToFTP ftp = new SendToFTP();
+			new SendToFTP();
 			try {
-				Thread.sleep(50000);
+				int time = settings.getSnapshot_time();
+				logger.info("Wating " + time/60000 + "min...");
+				Thread.sleep(time);
+				logger.info("Start");
+				
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				logger.error(e.toString());
 			}
 		}
 	}

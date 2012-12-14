@@ -25,14 +25,14 @@ public class SaveToFile {
 			File dir = new File("images");
 			File file = new File("images/cam_" + cam.getName() + "." + format);
 			try {
-				logger.warn("Saving frame to file: " + "cam_" + cam.getName() + "." + format);
+				logger.info("Saving frame to file: " + "cam_" + cam.getName() + "." + format);
 				if(!dir.exists()){
 					dir.mkdir();
-					logger.warn("Creating folder images");
+					logger.warn("Image folder don't exist. Creating a new folder");
 				}
 				ImageIO.write(cam.getImage(), format, file);
 			} catch (IOException e) {
-				logger.warn("Unable to save file from camera: " + cam.getName() + "\n\n\t\t" + e.toString());
+				logger.error("Unable to save file from camera: " + cam.getName() + "\n\n\t\t" + e.toString());
 			}
 		}
 	}

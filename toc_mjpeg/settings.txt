@@ -2,7 +2,7 @@
 camera_list camera_addr.txt;
 
 //Delaytime in minutes
-ttime 30;
+ttime 1;
 
 //Stream number
 stream 3;
@@ -19,5 +19,5 @@ username cameras;
 //Password
 password gs1926;
 
-//Folder to upolad from
+//Folder to upolad to
 dir ;

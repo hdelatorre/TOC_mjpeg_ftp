@@ -1,0 +1,34 @@
+"[INFO] 2012-12-14 15:10:33,064 - toc.Settings.loadFile(Settings.java:51) - Loading Settings file 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadCamFile(Settings.java:75) - Camera list loaded from " camera_addr.txt" 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadTime(Settings.java:90) - Snapshot delay:  1min 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadStreamNumber(Settings.java:101) - Stream number:  3 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadFormat(Settings.java:112) - File format:  jpg 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadFtpServer(Settings.java:123) - Server:  theoldcinema.co.uk 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadUsername(Settings.java:134) - Username:  cameras 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadPassword(Settings.java:145) - Password: xxxxxxxx 
+""[INFO] 2012-12-14 15:10:33,074 - toc.Settings.loadDir(Settings.java:156) - Upload images from:   
+""[INFO] 2012-12-14 15:10:33,074 - toc.CamSettings.<init>(CamSettings.java:36) - Loading a camera list file 
+""[INFO] 2012-12-14 15:10:33,074 - toc.CamSettings.<init>(CamSettings.java:45) - Loading cameras urls from a file finished 
+""[INFO] 2012-12-14 15:10:33,494 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.101/video3.mjpg 
+""[INFO] 2012-12-14 15:10:33,644 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 101 to a list 
+""[INFO] 2012-12-14 15:10:34,144 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.102/video3.mjpg 
+""[INFO] 2012-12-14 15:10:34,175 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 102 to a list 
+""[INFO] 2012-12-14 15:10:34,545 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.103/video3.mjpg 
+""[INFO] 2012-12-14 15:10:34,565 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 103 to a list 
+""[INFO] 2012-12-14 15:10:35,046 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.104/video3.mjpg 
+""[INFO] 2012-12-14 15:10:35,077 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 104 to a list 
+""[INFO] 2012-12-14 15:10:35,623 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.105/video3.mjpg 
+""[INFO] 2012-12-14 15:10:35,671 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 105 to a list 
+""[INFO] 2012-12-14 15:10:36,014 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.106/video3.mjpg 
+""[INFO] 2012-12-14 15:10:36,045 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 106 to a list 
+""[INFO] 2012-12-14 15:10:36,451 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.107/video3.mjpg 
+""[INFO] 2012-12-14 15:10:36,482 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 107 to a list 
+""[INFO] 2012-12-14 15:10:37,074 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.108/video3.mjpg 
+""[INFO] 2012-12-14 15:10:37,095 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 108 to a list 
+""[INFO] 2012-12-14 15:10:37,555 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.109/video3.mjpg 
+""[INFO] 2012-12-14 15:10:37,595 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 109 to a list 
+""[INFO] 2012-12-14 15:10:37,965 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.110/video3.mjpg 
+""[INFO] 2012-12-14 15:10:37,985 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 110 to a list 
+""[INFO] 2012-12-14 15:10:38,365 - toc.GetJpeg.connectToCameras(GetJpeg.java:44) - Reading frame from a camera: http://192.168.0.111/video3.mjpg 
+""[INFO] 2012-12-14 15:10:38,396 - toc.GetJpeg.connectToCameras(GetJpeg.java:48) - Addeding camera: 111 to a list 
+"

@@ -33,7 +33,7 @@ public class CamSettings {
 		prefix = "http://";
 		
 		try{
-			logger.warn("Loading a camera list file");
+			logger.info("Loading a camera list file");
 			
 			
 			//loading list of camras from file
@@ -42,13 +42,13 @@ public class CamSettings {
 			while((line = bf.readLine()) != null){
 				camList.add(prefix + line + suffix);
 			}
-			logger.warn("Loading cameras urls from a file finished");
+			logger.info("Loading cameras urls from a file finished");
 		}catch (FileNotFoundException e) {
 			
-			logger.warn(e.toString());
+			logger.error(e.toString());
 		}catch (IOException e) {
 			
-			logger.warn(e.toString());
+			logger.error(e.toString());
 		}
 	}
 	
